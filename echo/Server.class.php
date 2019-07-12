@@ -6,7 +6,7 @@ class Server
     public function __construct() {
         $this->serv = new swoole_server("0.0.0.0", 9501);
         $this->serv->set(array(
-            'worker_num' => 8,
+            'worker_num' => 2,
             'daemonize' => false,
         ));
 
